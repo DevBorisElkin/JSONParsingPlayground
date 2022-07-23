@@ -12,8 +12,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //executeCode_1()
-        executeCode_2()
+        //MiscFunctions.printRepositoryFromUrl(from: "https://api.github.com/users/defunkt", showJson: true)
+        
+        MiscFunctions.printRepositories(from: "https://api.github.com/repositories", showJson: true)
     }
 
 

@@ -18,7 +18,7 @@ class MiscFunctions{
         
     public static func printRepositories(from url:String, showJson: Bool = false){
         
-        NetworkingHelpers.decodeData(from: url, type: Repositories.self, printJSON: true) { repos in
+        NetworkingHelpers.decodeData(from: url, type: [Repository].self, printJSON: true) { repos in
             print("\(repos)")
             //repo.printMainData()
         }
