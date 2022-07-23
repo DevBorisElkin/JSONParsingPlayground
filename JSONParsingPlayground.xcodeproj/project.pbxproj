@@ -13,6 +13,10 @@
 		52F849EC288C03520061D223 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F849EA288C03520061D223 /* Main.storyboard */; };
 		52F849EE288C03530061D223 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F849ED288C03530061D223 /* Assets.xcassets */; };
 		52F849F1288C03530061D223 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F849EF288C03530061D223 /* LaunchScreen.storyboard */; };
+		52F849FC288C03D30061D223 /* CodeExecutionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F849FB288C03D30061D223 /* CodeExecutionClass.swift */; };
+		52F849FF288C04440061D223 /* RepoSimplified.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F849FE288C04440061D223 /* RepoSimplified.swift */; };
+		52F84A01288C04AA0061D223 /* MiscFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F84A00288C04AA0061D223 /* MiscFunctions.swift */; };
+		52F84A03288C0BF90061D223 /* NetworkingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F84A02288C0BF90061D223 /* NetworkingHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		52F849ED288C03530061D223 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52F849F0288C03530061D223 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52F849F2288C03530061D223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52F849FB288C03D30061D223 /* CodeExecutionClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeExecutionClass.swift; sourceTree = "<group>"; };
+		52F849FE288C04440061D223 /* RepoSimplified.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSimplified.swift; sourceTree = "<group>"; };
+		52F84A00288C04AA0061D223 /* MiscFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiscFunctions.swift; sourceTree = "<group>"; };
+		52F84A02288C0BF90061D223 /* NetworkingHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,9 @@
 		52F849E3288C03520061D223 /* JSONParsingPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				52F849FA288C03C30061D223 /* CodeExecution */,
+				52F849F8288C03A00061D223 /* GitHubAPI */,
+				52F849F9288C03A90061D223 /* GeneralCodeUsage */,
 				52F849E4288C03520061D223 /* AppDelegate.swift */,
 				52F849E6288C03520061D223 /* SceneDelegate.swift */,
 				52F849E8288C03520061D223 /* ViewController.swift */,
@@ -65,6 +76,39 @@
 				52F849F2288C03530061D223 /* Info.plist */,
 			);
 			path = JSONParsingPlayground;
+			sourceTree = "<group>";
+		};
+		52F849F8288C03A00061D223 /* GitHubAPI */ = {
+			isa = PBXGroup;
+			children = (
+				52F849FD288C04310061D223 /* Model_RepoSimplified */,
+			);
+			path = GitHubAPI;
+			sourceTree = "<group>";
+		};
+		52F849F9288C03A90061D223 /* GeneralCodeUsage */ = {
+			isa = PBXGroup;
+			children = (
+				52F84A00288C04AA0061D223 /* MiscFunctions.swift */,
+				52F84A02288C0BF90061D223 /* NetworkingHelpers.swift */,
+			);
+			path = GeneralCodeUsage;
+			sourceTree = "<group>";
+		};
+		52F849FA288C03C30061D223 /* CodeExecution */ = {
+			isa = PBXGroup;
+			children = (
+				52F849FB288C03D30061D223 /* CodeExecutionClass.swift */,
+			);
+			path = CodeExecution;
+			sourceTree = "<group>";
+		};
+		52F849FD288C04310061D223 /* Model_RepoSimplified */ = {
+			isa = PBXGroup;
+			children = (
+				52F849FE288C04440061D223 /* RepoSimplified.swift */,
+			);
+			path = Model_RepoSimplified;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +182,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F84A03288C0BF90061D223 /* NetworkingHelpers.swift in Sources */,
+				52F849FF288C04440061D223 /* RepoSimplified.swift in Sources */,
+				52F84A01288C04AA0061D223 /* MiscFunctions.swift in Sources */,
+				52F849FC288C03D30061D223 /* CodeExecutionClass.swift in Sources */,
 				52F849E9288C03520061D223 /* ViewController.swift in Sources */,
 				52F849E5288C03520061D223 /* AppDelegate.swift in Sources */,
 				52F849E7288C03520061D223 /* SceneDelegate.swift in Sources */,
