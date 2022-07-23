@@ -12,7 +12,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        executeCode_1()
+        //executeCode_1()
+        executeCode_2()
     }
 
 

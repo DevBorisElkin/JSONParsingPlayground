@@ -34,6 +34,9 @@ public class NetworkingHelpers{
     public static func decodeData<T: Decodable>(from url: String, type: T.Type, printJSON: Bool, completion: @escaping (T) -> ()){
         
         loadDataFromURL(from: url, printJSON: printJSON) { data in
+            //let decoder = JSONDecoder()
+            //decoder.keyDecodingStrategy = .convertFromSnakeCase
+            
             guard let result = try? JSONDecoder().decode(type.self, from: data) else{
                 print("\(#function) Couldn't decode data properly")
                 return

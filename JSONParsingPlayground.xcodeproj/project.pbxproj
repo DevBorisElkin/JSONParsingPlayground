@@ -17,6 +17,9 @@
 		52F849FF288C04440061D223 /* RepoSimplified.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F849FE288C04440061D223 /* RepoSimplified.swift */; };
 		52F84A01288C04AA0061D223 /* MiscFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F84A00288C04AA0061D223 /* MiscFunctions.swift */; };
 		52F84A03288C0BF90061D223 /* NetworkingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F84A02288C0BF90061D223 /* NetworkingHelpers.swift */; };
+		52F84A06288C15190061D223 /* RepositoryOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F84A05288C15190061D223 /* RepositoryOwner.swift */; };
+		52F84A08288C153B0061D223 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F84A07288C153B0061D223 /* Repository.swift */; };
+		52F84A0A288C15540061D223 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F84A09288C15540061D223 /* Repositories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		52F849FE288C04440061D223 /* RepoSimplified.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSimplified.swift; sourceTree = "<group>"; };
 		52F84A00288C04AA0061D223 /* MiscFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiscFunctions.swift; sourceTree = "<group>"; };
 		52F84A02288C0BF90061D223 /* NetworkingHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHelpers.swift; sourceTree = "<group>"; };
+		52F84A05288C15190061D223 /* RepositoryOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryOwner.swift; sourceTree = "<group>"; };
+		52F84A07288C153B0061D223 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		52F84A09288C15540061D223 /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		52F849F8288C03A00061D223 /* GitHubAPI */ = {
 			isa = PBXGroup;
 			children = (
+				52F84A04288C14F00061D223 /* Github_Repositories */,
 				52F849FD288C04310061D223 /* Model_RepoSimplified */,
 			);
 			path = GitHubAPI;
@@ -109,6 +116,16 @@
 				52F849FE288C04440061D223 /* RepoSimplified.swift */,
 			);
 			path = Model_RepoSimplified;
+			sourceTree = "<group>";
+		};
+		52F84A04288C14F00061D223 /* Github_Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				52F84A05288C15190061D223 /* RepositoryOwner.swift */,
+				52F84A07288C153B0061D223 /* Repository.swift */,
+				52F84A09288C15540061D223 /* Repositories.swift */,
+			);
+			path = Github_Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,12 +200,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				52F84A03288C0BF90061D223 /* NetworkingHelpers.swift in Sources */,
+				52F84A0A288C15540061D223 /* Repositories.swift in Sources */,
 				52F849FF288C04440061D223 /* RepoSimplified.swift in Sources */,
 				52F84A01288C04AA0061D223 /* MiscFunctions.swift in Sources */,
+				52F84A06288C15190061D223 /* RepositoryOwner.swift in Sources */,
 				52F849FC288C03D30061D223 /* CodeExecutionClass.swift in Sources */,
 				52F849E9288C03520061D223 /* ViewController.swift in Sources */,
 				52F849E5288C03520061D223 /* AppDelegate.swift in Sources */,
 				52F849E7288C03520061D223 /* SceneDelegate.swift in Sources */,
+				52F84A08288C153B0061D223 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
