@@ -8,10 +8,11 @@
 import Foundation
 
 struct Repository: Decodable{
-    //var owner: RepositoryOwner
+    
     var id: Int
     //var node_id: String
     var name: String
+    var owner: RepositoryOwner
     //var full_name: String
     //var _private: Bool
     //var html_url: String

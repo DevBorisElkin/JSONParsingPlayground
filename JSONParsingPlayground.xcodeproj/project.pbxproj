@@ -70,9 +70,9 @@
 		52F849E3288C03520061D223 /* JSONParsingPlayground */ = {
 			isa = PBXGroup;
 			children = (
-				52F849FA288C03C30061D223 /* CodeExecution */,
-				52F849F8288C03A00061D223 /* GitHubAPI */,
 				52F849F9288C03A90061D223 /* GeneralCodeUsage */,
+				52F849F8288C03A00061D223 /* Model_GitHubAPI */,
+				52F849FA288C03C30061D223 /* CodeExecution */,
 				52F849E4288C03520061D223 /* AppDelegate.swift */,
 				52F849E6288C03520061D223 /* SceneDelegate.swift */,
 				52F849E8288C03520061D223 /* ViewController.swift */,
@@ -84,13 +84,13 @@
 			path = JSONParsingPlayground;
 			sourceTree = "<group>";
 		};
-		52F849F8288C03A00061D223 /* GitHubAPI */ = {
+		52F849F8288C03A00061D223 /* Model_GitHubAPI */ = {
 			isa = PBXGroup;
 			children = (
 				52F84A04288C14F00061D223 /* Github_Repositories */,
 				52F849FD288C04310061D223 /* Model_RepoSimplified */,
 			);
-			path = GitHubAPI;
+			path = Model_GitHubAPI;
 			sourceTree = "<group>";
 		};
 		52F849F9288C03A90061D223 /* GeneralCodeUsage */ = {

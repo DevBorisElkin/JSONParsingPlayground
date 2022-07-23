@@ -9,6 +9,17 @@ import Foundation
 
 public class NetworkingHelpers{
     
+    public static func decodeData<T: Decodable>(from url: String, type: T.Type, printJSON: Bool, completion: @escaping (T) -> ()){
+        
+        loadDataFromURL(from: url, printJSON: printJSON) { data in
+            guard let result = try? JSONDecoder().decode(type.self, from: data) else{
+                print("\(#function) Couldn't decode data properly")
+                return
+            }
+            completion(result)
+        }
+    }
+    
     public static func loadDataFromURL(from url: String, printJSON: Bool, completion: @escaping (Data) -> ()){
         
         var task = URLSession.shared.dataTask(with: URL(string: url)!) { data, response, error in
@@ -31,30 +42,12 @@ public class NetworkingHelpers{
         task.resume()
     }
     
-    public static func decodeData<T: Decodable>(from url: String, type: T.Type, printJSON: Bool, completion: @escaping (T) -> ()){
-        
-        loadDataFromURL(from: url, printJSON: printJSON) { data in
-            guard let result = try? JSONDecoder().decode(type.self, from: data) else{
-                print("\(#function) Couldn't decode data properly")
-                return
-            }
-            completion(result)
-        }
-    }
+    // MARK: some async await code
     
-    public static func decodeDataTest<T: Decodable>(from url: String, type: T.Type, printJSON: Bool, completion: @escaping (T) -> ()){
-        
-        loadDataFromURL(from: url, printJSON: printJSON) { data in
+    /// Call it from Task{} or Task.detached{}
+    public static func loadDataFromURL<T : Decodable>(from url: URL) async throws -> T {
+            let (data, _) = try await URLSession.shared.data(from: url)
             let decoder = JSONDecoder()
-            decoder.keyDecodingStrategy = .convertFromSnakeCase
-            
-            guard let result = try? decoder.decode(type.self, from: data) else{
-                print("\(#function) Couldn't decode data properly 2")
-                return
-            }
-            completion(result)
-        }
+            return try decoder.decode(T.self, from: data)
     }
-    
-    
 }
